@@ -2,20 +2,6 @@ package com.springboot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-/*
- Web Annotation : 
- 	@RestController = @Controller + @ResponseBody
- 	@Controller 
- 	@GetMapping 
- 	@PostMapping 
- 	@PutMapping
- 	@DeleteMapping 
- 	@RequestParam 
- 	@ResponseBody
- 	@RequestBody
- 	@RequestMapping
- 	@PathVariable
- */
 
 @SpringBootApplication
 public class Application {
