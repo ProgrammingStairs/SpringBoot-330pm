@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.com">
+	<head>
+		<title>Home</title>
+	</head>
+	<body>
+		<h2>Spring Security Example | Thymeleaf Template Engine</h2>
+		<a th:href="@{/login}">Login</a>
+		<a th:href="@{/admin/home}">Admin</a>
+		<a th:href="@{/user/home}">User</a>
+		<h2>Customize Login Form</h2>
+		<form th:action="@{/doLogin}" method="post">
+			<label for="username">Username</label> <br>
+			<input
+				type="text"
+				placeholder="Enter Username"
+				id="username"
+				name="username"
+			> <br>
+			<input
+				type="password"
+				placeholder="Enter Password"
+				id="password"
+				name="password"
+			> <br>
+			<input
+				type="submit"
+				value="Submit"
+			> <br>
+		</form>
+		<p th:if="${param.error}"  style="color:red">
+			Invalid credentials
+		</p>
+		<p th:if="${param.status}"  style="color:green">
+			Logout Successfully
+		</p>
+
+	</body>
+</html>
