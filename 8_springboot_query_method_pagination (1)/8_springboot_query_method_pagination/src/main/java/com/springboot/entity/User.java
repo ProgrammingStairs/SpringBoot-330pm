@@ -21,7 +21,7 @@ import jakarta.persistence.JoinColumn;
 @NamedNativeQuery(
 	name = "User.searchByGender",
 	query = "select * from userQuery where gender=:gender",
-	resultClass = User.class
+	resultClass = User.class 
 )
 
 @Entity
