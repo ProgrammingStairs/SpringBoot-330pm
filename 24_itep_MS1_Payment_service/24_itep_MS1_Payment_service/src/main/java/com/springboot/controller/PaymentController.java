@@ -21,4 +21,9 @@ public class PaymentController {
 	public Payment addPayment(@RequestBody Payment payment) {
 		return paymentService.addPayment(payment);
 	}
+	
+	@GetMapping("/payment/{paymentId}")
+	public Payment getPaymentObj(@PathVariable("paymentId") int paymentId) {
+		return paymentService.getById(paymentId);
+	}
 }
